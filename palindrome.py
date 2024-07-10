@@ -1,15 +1,11 @@
+#Define a function 
+def isPalindrome(string): 
+    if (string == string[::-1]) : 
+        return "The string is a palindrome." 
+    else: 
+        return "The string is not a palindrome." 
+ 
 #Enter input string 
-string = input("Enter string : ") 
+string = input ("Enter string: ") 
  
-#Declare an empty string variable   
-revstr = "" 
- 
-#Iterate string with for loop 
-for i in string: 
-    revstr = i + revstr   
-print("Reversed string : ", revstr) 
- 
-if(string == revstr): 
-   print("The string is a palindrome.") 
-else: 
-   print("The string is not a palindrome.")
+print(isPalindrome(string))
